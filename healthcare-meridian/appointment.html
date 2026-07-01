@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment | Meridian Clinic</title>
+<meta name="description" content="Book an appointment at Meridian Clinic online. Choose your department and preferred date, or call our front desk directly. 24/7 emergency line available.">
+<meta name="keywords" content="book appointment, clinic booking form, meridian clinic contact, emergency contact clinic">
+<meta name="author" content="Meridian Clinic">
+<link rel="canonical" href="https://meridian-clinic.netlify.app/appointment.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="emergency-banner">Medical emergency? Call our 24/7 line: <strong>+91 90000 11223</strong></div>
+
+<header class="site-header">
+  <nav class="nav-wrap" aria-label="Primary navigation">
+    <a href="index.html" class="logo">Meridian<span class="dot">+</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Departments</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="appointment.html" class="nav-cta" aria-current="page">Book Appointment</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"></button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:0;">
+    <div class="container" style="padding-bottom:60px;">
+      <span class="eyebrow">Book an appointment</span>
+      <h1>Pick a department, pick a date, we'll confirm the slot.</h1>
+      <p class="lead">Fill in the form below and our front desk will call to confirm your exact appointment time.</p>
+    </div>
+    <svg class="pulse-divider" viewBox="0 0 1180 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 20 L280 20 L310 5 L340 35 L370 20 L1180 20"/>
+    </svg>
+  </section>
+
+  <section>
+    <div class="container grid-2">
+      <div>
+        <div id="form-success" role="status"></div>
+        <form class="form-card" id="appointment-form" novalidate>
+          <h2 style="margin-top:0;">Appointment request</h2>
+
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Patient's full name" required>
+            <div class="error">Please enter your full name.</div>
+          </div>
+
+          <div class="two-col">
+            <div class="form-row">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <div class="error">Please enter a valid email address.</div>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 90000 00000" required>
+              <div class="error">Please enter a valid phone number.</div>
+            </div>
+          </div>
+
+          <div class="two-col">
+            <div class="form-row">
+              <label for="department">Department</label>
+              <select id="department" name="department" required>
+                <option value="">Select a department</option>
+                <option>General Medicine</option>
+                <option>Pediatrics</option>
+                <option>Cardiology</option>
+              </select>
+              <div class="error">Please select a department.</div>
+            </div>
+            <div class="form-row">
+              <label for="appt-date">Preferred date</label>
+              <input type="date" id="appt-date" name="appt-date" required>
+              <div class="error">Please choose a preferred date.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="reason">Reason for visit (optional)</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe your symptoms or reason for the visit"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Request appointment</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Reach us directly</h2>
+        <ul style="list-style:none;padding:0;font-family:var(--font-mono);font-size:0.95rem;line-height:2;">
+          <li><strong>Front desk:</strong> +91 90000 00000</li>
+          <li><strong>Emergency (24/7):</strong> +91 90000 11223</li>
+          <li><strong>Email:</strong> care@meridianclinic.example</li>
+          <li><strong>Hours:</strong> Mon–Sat, 8am – 9pm IST</li>
+        </ul>
+
+        <h3 style="margin-top:32px;">Our location</h3>
+        <div class="map-block" role="img" aria-label="Map placeholder showing Meridian Clinic location in Vadodara, Gujarat">
+          Clinic location — Vadodara, Gujarat
+        </div>
+        <p style="margin-top:14px;font-size:0.9rem;color:#395852;">42, Health Park Road, Alkapuri, Vadodara, Gujarat 390007</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Meridian Clinic</h4>
+        <p style="max-width:32ch;">Family and specialist health care with same-week appointments.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Departments</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Patients</h4>
+        <ul>
+          <li><a href="appointment.html">Book appointment</a></li>
+          <li><a href="appointment.html">Emergency contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li>care@meridianclinic.example</li>
+          <li>+91 90000 11223</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Meridian Clinic. All rights reserved.</span>
+      <span>Designed &amp; built for MANTRA 2026 Summer School</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
