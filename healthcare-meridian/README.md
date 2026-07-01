@@ -5,8 +5,7 @@ health clinic, built for the **MANTRA 2026 Summer School — Frontend Website
 Assignment**.
 
 ## 🌐 Live Demo
-_Add your Netlify link here after deployment, e.g._
-`https://meridian-clinic.netlify.app`
+   https://6a44f56f7cc58a1508282f9c--incandescent-swan-9b1f02.netlify.app/
 
 ## 🛠 Tech Stack
 - **HTML5** – semantic page structure across 5 pages
